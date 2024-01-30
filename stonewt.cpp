@@ -4,7 +4,7 @@ using std::cout;
 
 Stonewt::Stonewt(double lbs)
 {
-    stone + int(lbs) / Lbs_per_stn;
+    stone = int(lbs) / Lbs_per_stn;
     pds_left = int (lbs) % Lbs_per_stn + lbs - int(lbs);
     pounds = lbs;
 }
@@ -26,4 +26,17 @@ void Stonewt::show_lbs() const
 void Stonewt::show_stn() const
 {
     cout << pounds << " pounds\n";
+}
+
+double Stonewt::show_pds_left()
+{
+    return pds_left;
+}
+double Stonewt::show_pounds()
+{
+    return pounds;
+}
+int Stonewt::show_stone()
+{
+    return stone;
 }

@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/serg/Documents/Cpp-exampl/build",
+  "command": "/usr/bin/c++  -I/home/serg/Documents/Cpp-exampl/build -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/stone_Lib.dir/stonewt.cpp.o -c /home/serg/Documents/Cpp-exampl/stonewt.cpp",
+  "file": "/home/serg/Documents/Cpp-exampl/stonewt.cpp",
+  "output": "CMakeFiles/stone_Lib.dir/stonewt.cpp.o"
+},
+{
+  "directory": "/home/serg/Documents/Cpp-exampl/build",
+  "command": "/usr/bin/c++   -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/stone_App.dir/stone.cpp.o -c /home/serg/Documents/Cpp-exampl/stone.cpp",
+  "file": "/home/serg/Documents/Cpp-exampl/stone.cpp",
+  "output": "CMakeFiles/stone_App.dir/stone.cpp.o"
+},
+{
+  "directory": "/home/serg/Documents/Cpp-exampl/build",
+  "command": "/usr/bin/c++  -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest/include -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock/include -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/stone_Test.dir/gtest_stone.cpp.o -c /home/serg/Documents/Cpp-exampl/gtest_stone.cpp",
+  "file": "/home/serg/Documents/Cpp-exampl/gtest_stone.cpp",
+  "output": "CMakeFiles/stone_Test.dir/gtest_stone.cpp.o"
+},
+{
+  "directory": "/home/serg/Documents/Cpp-exampl/build/build/_deps/googletest-src/googlemock",
+  "command": "/usr/bin/c++  -I/home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock/include -I/home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest/include -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "build/_deps/googletest-src/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/home/serg/Documents/Cpp-exampl/build/build/_deps/googletest-src/googlemock",
+  "command": "/usr/bin/c++  -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock/include -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest/include -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "build/_deps/googletest-src/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/home/serg/Documents/Cpp-exampl/build/build/_deps/googletest-src/googletest",
+  "command": "/usr/bin/c++  -I/home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest/include -I/home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "build/_deps/googletest-src/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/home/serg/Documents/Cpp-exampl/build/build/_deps/googletest-src/googletest",
+  "command": "/usr/bin/c++  -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest/include -isystem /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/home/serg/Documents/Cpp-exampl/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "build/_deps/googletest-src/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+}
+]

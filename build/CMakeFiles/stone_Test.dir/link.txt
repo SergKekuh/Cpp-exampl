@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/stone_Test.dir/gtest_stone.cpp.o -o stone_Test  libstone_Lib.a lib/libgtest_main.a lib/libgmock_main.a lib/libgmock.a lib/libgtest.a 

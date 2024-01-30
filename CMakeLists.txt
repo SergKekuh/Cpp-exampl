@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.28.1)
 
-
-set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
-set(PROJECT_VESRION 0.0.${PATCH_VERSION})
-
-project(helloworld VERSION ${PROJECT_VESRION})
+project(stone)
 
 #get googletest
 include(FetchContent)
@@ -16,61 +12,58 @@ FetchContent_GetProperties(googletest)
 
 
 
-# googletest_POPULATED
-# googletest_SOURCE_DIR
-# googletest_BUILD_DIR
-
 if(NOT googletest_POPULATED)
   FetchContent_Populate(googletest)
   add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BUILD_DIR})
 endif()
 
-configure_file(version.h.in version.h)
-add_library(hellow_Lib STATIC lib.cpp)
 
-add_executable(hellow_App main.cpp)
-target_link_libraries(hellow_App 
-    hellow_Lib
+add_library(stone_Lib STATIC stonewt.cpp)
+
+add_executable(stone_App stonewt.h stone.cpp)
+target_link_libraries(stone_App 
+    stone_Lib
 )
 
-add_executable(test_version test_version.cpp)
-target_link_libraries(test_version 
-    hellow_Lib
+
+add_executable(stone_Test gtest_stone.cpp)
+target_link_libraries(stone_Test 
+    stone_Lib
     gtest_main
     gmock_main
 )
-set_target_properties(hellow_App hellow_Lib test_version PROPERTIES
+set_target_properties(stone_App stone_Lib stone_Test PROPERTIES
     CXX_STANDARD 14
     CXX_STANDARD_REQUIRED ON
 )
-target_include_directories(hellow_Lib
+target_include_directories(stone_Lib
     PRIVATE "${CMAKE_BINARY_DIR}"
 )
 
 if (MSVC)
-    target_compile_options(hellow_App PRIVATE
+    target_compile_options(stone_App PRIVATE
         /W4
     )
-    target_compile_options(hellow_Lib PRIVATE
+    target_compile_options(stone_Lib PRIVATE
         /W4
     )
-    target_compile_options(test_version PRIVATE
+    target_compile_options(stone_Test PRIVATE
         /W4
     )
 else ()
-    target_compile_options(hellow_App PRIVATE
+    target_compile_options(stone_App PRIVATE
         -Wall -Wextra -pedantic -Werror
     )
-    target_compile_options(hellow_Lib PRIVATE
+    target_compile_options(stone_Lib PRIVATE
         -Wall -Wextra -pedantic -Werror
     )
-    target_compile_options(test_version PRIVATE
+    target_compile_options(stone_Test PRIVATE
         -Wall -Wextra -pedantic -Werror
     )
 endif()
 
 
-install(TARGETS hellow_App RUNTIME DESTINATION bin)
+install(TARGETS stone_App RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
@@ -84,4 +77,4 @@ include(CPack)
 
 enable_testing()
 
-add_test(test_version test_version)
+add_test(stone_Test stone_Test)

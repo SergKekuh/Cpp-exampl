@@ -14,5 +14,8 @@ class Stonewt
 		~Stonewt();
 		void show_lbs() const;
 		void show_stn() const;
+		double show_pds_left();
+		double show_pounds();
+		int show_stone();
 };
 #endif

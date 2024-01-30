@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstone_Lib.a CMakeFiles/stone_Lib.dir/stonewt.cpp.o
+/usr/bin/ranlib libstone_Lib.a

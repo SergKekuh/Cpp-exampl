@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/stone_App.dir/stone.cpp.o -o stone_App  libstone_Lib.a 
